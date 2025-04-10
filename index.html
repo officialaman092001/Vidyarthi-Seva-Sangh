@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidyarthi Seva Sangh</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover, nav a:focus {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: white;
+            margin: 20px auto;
+            max-width: 1100px;
+            border-radius: 8px;
+        }
+
+        .content-title {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+            color: #007BFF;
+        }
+
+        .objective {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-top: 20px;
+            background-color: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .message {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f0f8ff;
+            border-radius: 8px;
+        }
+
+        .card {
+            padding: 15px;
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 45%; /* Adjust the width to allow side-by-side layout */
+            margin-right: 5%; /* Space between the two cards */
+        }
+
+        .card img {
+            width: 150px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        .card-text {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 80%;
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Flexbox to arrange President and Vice President side by side */
+        .leadership-cards {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                float: none;
+                display: block;
+                text-align: left;
+                padding: 10px;
+            }
+
+            .leadership-cards {
+                flex-direction: column;
+            }
+
+            .card {
+                width: 100%; /* Stack cards vertically on smaller screens */
+                margin-right: 0;
+            }
+
+            .card img {
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Vidyarthi Seva Sangh</h1>
+        <p>Empowering Students, Enriching Education & Culture</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#objectives">Objectives</a>
+        <a href="#leadership">Leadership</a>
+    </nav>
+
+    <!-- Home Content Section -->
+    <section class="container fade-in" id="home">
+        <div class="content-title">
+            <h2>Welcome to Vidyarthi Seva Sangh</h2>
+            <p>We are dedicated to the welfare of students, focusing on their educational and cultural upliftment.</p>
+        </div>
+        
+        <div class="objective">
+            <h3>Our Objectives</h3>
+            <p>Vidyarthi Seva Sangh aims to foster the holistic development of students by:</p>
+            <ul>
+                <li>Providing resources and opportunities for academic growth.</li>
+                <li>Encouraging cultural engagement and leadership skills.</li>
+                <li>Ensuring the well-being of students through social initiatives.</li>
+                <li>Supporting the students’ journey toward a brighter future.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="container fade-in" id="leadership">
+        <div class="content-title">
+            <h2>Meet Our Leadership</h2>
+        </div>
+
+        <!-- Leadership Cards Section -->
+        <div class="leadership-cards">
+            <!-- President Section -->
+            <div class="card">
+                <div style="display: flex; align-items: center;">
+                    <img src="https://via.placeholder.com/150" alt="President">
+                    <div class="card-text">
+                        <h3>Mr. Aman Srivastava</h3>
+                        <p><strong>President</strong></p>
+                        <div class="message">
+                            <p><em>"The vision of Vidyarthi Seva Sangh is to make every student not just excel academically but also build a strong foundation for personal growth. Together, we can make the world a better place for the youth."</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vice President Section -->
+            <div class="card">
+                <div style="display: flex; align-items: center;">
+                    <img src="https://via.placeholder.com/150" alt="Vice President">
+                    <div class="card-text">
+                        <h3>Mr. Arun Pratap Singh</h3>
+                        <p><strong>Vice President/Treasurer</strong></p>
+                        <div class="message">
+                            <p><em>"Our focus is on both the intellectual and cultural empowerment of students. Through the Sangh, we aim to create a community of responsible, engaged, and well-rounded individuals."</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
